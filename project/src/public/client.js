@@ -20,6 +20,7 @@ const render = async (root, state) => {
     root.innerHTML = App(state)
 }
 
+// High-Order functions
 const renderRoverTab = (activeRover) => (html, rover) => html += Tab(rover, rover === activeRover)
 
 const renderPhotoCarousel = (html, photo, index) => html += Photo(photo.img_src, index === 0)
